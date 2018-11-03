@@ -10,8 +10,8 @@ by adding `defql` to your list of dependencies in `mix.exs`:
 ```elixir
 defp deps do
   [
-    {:defql, "~> 0.1.1"},
-    {:postgrex, ">= 0.13.0"}, # optional
+    {:defql, "~> 0.1.2"},
+    {:postgrex, ">= 0.14.0"}, # optional
   ]
 end
 ```
@@ -39,7 +39,7 @@ config :defql, connection: [
   username: "username",
   password: "password",
   database: "my_db",
-  pool: DBConnection.Poolboy,
+  pool: DBConnection.ConnectionPool,
   pool_size: 1
 ]
 ```
